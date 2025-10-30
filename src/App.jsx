@@ -6,6 +6,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage />} />
+        {/* Add more routes here as needed */}
       </Routes>
     </BrowserRouter>
   );
