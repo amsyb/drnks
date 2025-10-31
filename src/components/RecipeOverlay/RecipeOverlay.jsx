@@ -3,7 +3,7 @@ import "./RecipeOverlay.scss";
 
 function RecipeOverlay({ recipe, onClose }) {
   const [openSections, setOpenSections] = useState({
-    recipe: true, // Recipe section open by default
+    recipe: true,
     steps: false,
     history: false,
     allergens: false,
@@ -26,7 +26,6 @@ function RecipeOverlay({ recipe, onClose }) {
         <img className="overlay__image" src={recipe.image} alt={recipe.title} />
         <h2 className="overlay__title">{recipe.title}</h2>
 
-        {/* Recipe Section */}
         <div className="overlay__dropdown">
           <button
             className="overlay__dropdown-header"
@@ -55,7 +54,6 @@ function RecipeOverlay({ recipe, onClose }) {
           )}
         </div>
 
-        {/* Steps Section */}
         <div className="overlay__dropdown">
           <button
             className="overlay__dropdown-header"
@@ -79,7 +77,6 @@ function RecipeOverlay({ recipe, onClose }) {
           )}
         </div>
 
-        {/* History Section */}
         <div className="overlay__dropdown">
           <button
             className="overlay__dropdown-header"
@@ -99,7 +96,6 @@ function RecipeOverlay({ recipe, onClose }) {
           )}
         </div>
 
-        {/* Allergens Section */}
         <div className="overlay__dropdown">
           <button
             className="overlay__dropdown-header"
