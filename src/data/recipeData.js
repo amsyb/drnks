@@ -1,7 +1,5 @@
 import oldFashioned from "../assets/images/old-fashioned.jpg";
 
-console.log("Old Fashioned import:", oldFashioned); // See what this logs
-
 export const recipes = [
   {
     id: 1,
@@ -9,10 +7,40 @@ export const recipes = [
     description: "Gin Strong Stirred",
     image: oldFashioned,
   },
-  //   {
-  //     id: 2,
-  //     title: "Margarita",
-  //     description: "Tequila, lime, and triple sec with a salted rim",
-  //     image: "https://images.unsplash.com/photo-1574096079513-d8259312b785",
-  //   },
+  {
+    id: 2,
+    title: "Bamboo",
+    description: "Gin Strong Stirred",
+    image: oldFashioned,
+  },
+  {
+    id: 3,
+    title: "Gin Fizz",
+    description: "Gin Strong Stirred",
+    image: oldFashioned,
+  },
+  {
+    id: 4,
+    title: "Margarita",
+    description: "Gin Strong Stirred",
+    image: oldFashioned,
+  },
+  {
+    id: 5,
+    title: "Last Word",
+    description: "Gin Strong Stirred",
+    image: oldFashioned,
+  },
+  {
+    id: 6,
+    title: "Naked & Famous",
+    description: "Gin Strong Stirred",
+    image: oldFashioned,
+  },
+  {
+    id: 7,
+    title: "Martinez",
+    description: "Gin Strong Stirred",
+    image: oldFashioned,
+  },
 ];

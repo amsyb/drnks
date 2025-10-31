@@ -1,2 +1,8 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/global" as *;
+
+.recipe-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}

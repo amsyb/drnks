@@ -1,17 +1,19 @@
-const RecipeCard = ({ title, description, image }) => {
+import "./RecipeCard.scss";
+
+function RecipeCard({ recipe }) {
+  const tags = recipe.description.split(" ");
+
   return (
-    <div
-      className="bg-white rounded-lg shadow-md overflow-hidden"
-      style={{ width: "330px", height: "387px" }}
-    >
-      <img
-        src={image}
-        alt={title}
-        style={{ width: "330px", height: "387px" }}
-        className="object-cover hover:scale-105 transition-transform duration-300"
-      />
+    <div className="card">
+      <img className="card_img" src={recipe.image} alt={recipe.title} />
+      <h4 className="card_title">{recipe.title}</h4>
+      <div className="card_desc">
+        {tags.map((tag, index) => (
+          <p key={index}>{tag}</p>
+        ))}
+      </div>
     </div>
   );
-};
+}
 
 export default RecipeCard;
