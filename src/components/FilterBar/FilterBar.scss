@@ -5,10 +5,9 @@
   padding-bottom: 2rem;
   &__content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 1rem;
-    padding: 1.5rem;
+    padding: 1rem;
     background-color: $light-yellow;
     border-radius: 12px;
   }
@@ -70,17 +69,21 @@
 
   &__clear {
     padding: 0.75rem 1.5rem;
-    background-color: #ff6b6b;
-    color: white;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     font-weight: 600;
     transition: background-color 0.2s;
     flex-shrink: 0;
+    background: none;
+    border: none;
+    color: $primary-text;
+    cursor: pointer;
+    font-family: "Lexend";
 
     &:hover {
-      background-color: #ff5252;
+      color: $secondary-text;
+      text-decoration: underline;
     }
   }
 }

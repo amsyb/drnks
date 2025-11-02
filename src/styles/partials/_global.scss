@@ -37,9 +37,19 @@ h4 {
   font-size: 20px;
   color: $primary-text;
 }
+
+input,
+button,
+li,
 p {
   font-family: "Lexend";
-  font-size: 18px;
+  font-size: 14px;
+  color: $primary-text;
+}
+
+span {
+  font-family: "Lexend";
+  font-size: 16px;
   color: $primary-text;
 }
 
