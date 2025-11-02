@@ -14,7 +14,6 @@ function Homepage() {
     method: "All",
   });
 
-  // Apply both search and filters
   const filteredRecipes = recipes.filter((recipe) => {
     // Search filter
     const query = searchQuery.toLowerCase();
@@ -38,8 +37,10 @@ function Homepage() {
 
   return (
     <div className="homepage">
-      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-
+      <div className="homepage__title">
+        <h1>Lilt</h1>
+        <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+      </div>
       <FilterBar filters={filters} setFilters={setFilters} />
 
       <div className="recipe-container">

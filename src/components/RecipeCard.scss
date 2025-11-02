@@ -6,11 +6,10 @@
   padding: 20px;
   border-radius: 20px;
   border: 1px $dark-orange solid;
-  max-width: 380px;
+  width: 380px;
   background-color: $light-yellow;
   cursor: pointer;
-  transition: transfrom 0.2s;
-
+  transition: transform 0.2s;
   &:hover {
     transform: translateY(-4px);
   }
