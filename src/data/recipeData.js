@@ -1,11 +1,22 @@
 import oldFashioned from "../assets/images/old-fashioned.jpg";
+import margarita from "../assets/images/margarita.jpg";
+import mojito from "../assets/images/mojito.jpg";
+import sidecar from "../assets/images/sidecar.jpg";
+import martini from "../assets/images/martini.jpg";
+import pinaColada from "../assets/images/pina-colada.jpg";
+import daiquiri from "../assets/images/daiquiri.jpg";
+import cosmo from "../assets/images/cosmo.jpg";
+import americano from "../assets/images/americano.jpg";
+import whiskeySour from "../assets/images/whiskey-sour.jpg";
+import negroni from "../assets/images/negroni.jpg";
+import bloodyMary from "../assets/images/bloody-mary.jpg";
 
 export const recipes = [
   {
     id: 1,
     title: "Americano",
     mainIngredients: ["Campari", "Sweet Vermouth", "Soda Water"],
-    image: oldFashioned,
+    image: americano,
 
     baseSpirit: "Other",
     method: "Built",
@@ -42,7 +53,7 @@ export const recipes = [
     id: 2,
     title: "Martini",
     mainIngredients: ["Gin", "Dry Vermouth"],
-    image: oldFashioned,
+    image: martini,
 
     baseSpirit: "Gin",
     method: "Stirred",
@@ -77,7 +88,7 @@ export const recipes = [
     id: 3,
     title: "Margarita",
     mainIngredients: ["Tequila", "Triple Sec", "Lime Juice"],
-    image: oldFashioned,
+    image: margarita,
 
     baseSpirit: "Tequila",
     method: "Shaken",
@@ -143,7 +154,7 @@ export const recipes = [
     id: 5,
     title: "Mojito",
     mainIngredients: ["White Rum", "Mint", "Lime Juice", "Soda Water"],
-    image: oldFashioned,
+    image: mojito,
 
     baseSpirit: "Rum",
     method: "Built",
@@ -177,7 +188,7 @@ export const recipes = [
     id: 6,
     title: "Cosmopolitan",
     mainIngredients: ["Vodka", "Triple Sec", "Cranberry Juice", "Lime Juice"],
-    image: oldFashioned,
+    image: cosmo,
 
     baseSpirit: "Vodka",
     method: "Shaken",
@@ -209,7 +220,7 @@ export const recipes = [
     id: 7,
     title: "Negroni",
     mainIngredients: ["Gin", "Campari", "Sweet Vermouth"],
-    image: oldFashioned,
+    image: negroni,
 
     baseSpirit: "Gin",
     method: "Stirred",
@@ -240,7 +251,7 @@ export const recipes = [
     id: 8,
     title: "Piña Colada",
     mainIngredients: ["White Rum", "Coconut Cream", "Pineapple Juice"],
-    image: oldFashioned,
+    image: pinaColada,
 
     baseSpirit: "Rum",
     method: "Blended",
@@ -272,7 +283,7 @@ export const recipes = [
     id: 9,
     title: "Whiskey Sour",
     mainIngredients: ["Whiskey", "Lemon Juice", "Simple Syrup"],
-    image: oldFashioned,
+    image: whiskeySour,
 
     baseSpirit: "Whiskey",
     method: "Shaken",
@@ -304,7 +315,7 @@ export const recipes = [
     id: 10,
     title: "Daiquiri",
     mainIngredients: ["White Rum", "Lime Juice", "Simple Syrup"],
-    image: oldFashioned,
+    image: daiquiri,
 
     baseSpirit: "Rum",
     method: "Shaken",
@@ -335,7 +346,7 @@ export const recipes = [
     id: 11,
     title: "Bloody Mary",
     mainIngredients: ["Vodka", "Tomato Juice", "Spices"],
-    image: oldFashioned,
+    image: bloodyMary,
 
     baseSpirit: "Vodka",
     method: "Built",
@@ -368,7 +379,7 @@ export const recipes = [
     id: 12,
     title: "Sidecar",
     mainIngredients: ["Brandy", "Triple Sec", "Lemon Juice"],
-    image: oldFashioned,
+    image: sidecar,
 
     baseSpirit: "Brandy",
     method: "Shaken",
