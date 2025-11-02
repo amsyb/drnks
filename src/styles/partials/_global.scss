@@ -1,0 +1,48 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+@use "./typography";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+
+  @include tablet {
+    padding: 2em;
+  }
+}
+
+h1 {
+  font-family: "Space Grotesk";
+  font-size: 40px;
+  color: $primary-text;
+}
+h2 {
+  font-family: "Space Grotesk";
+  font-size: 32px;
+  color: $primary-text;
+}
+h3 {
+  font-family: "Space Grotesk";
+  font-size: 24px;
+  color: $primary-text;
+}
+h4 {
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  color: $primary-text;
+}
+p {
+  font-family: "Lexend";
+  font-size: 18px;
+  color: $primary-text;
+}
+
+body {
+  background-color: $background-color;
+}

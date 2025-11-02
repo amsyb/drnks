@@ -1,0 +1,16 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+
+.recipe-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.homepage__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0 2rem 0;
+}

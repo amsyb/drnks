@@ -1,0 +1,31 @@
+@use "../styles/partials/global" as *;
+@use "../styles/partials/variables" as *;
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px $dark-orange solid;
+  width: 380px;
+  background-color: $light-yellow;
+  cursor: pointer;
+  transition: transform 0.2s;
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.card_img {
+  height: 387px;
+  border-radius: 8px;
+}
+
+.card_title {
+  padding: 16px 0 10px 0;
+}
+
+.card_desc {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
