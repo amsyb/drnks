@@ -62,14 +62,14 @@
     flex-shrink: 0;
 
     &:hover {
-      border-color: #4a90e2;
-      background-color: #f0f7ff;
+      border-color: $dark-orange;
+      background-color: $hover-yellow;
     }
 
     &.active {
-      background-color: #4a90e2;
-      color: white;
-      border-color: #4a90e2;
+      background-color: $dark-orange;
+      color: $primary-text;
+      border-color: $dark-orange;
     }
   }
 
