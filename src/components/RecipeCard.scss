@@ -3,7 +3,6 @@
 @use "../styles/partials/mixins" as *;
 
 .card {
-  // Mobile default - full width (one card per row)
   flex: 1 1 100%;
   max-width: 100%;
   padding: 20px;
