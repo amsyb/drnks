@@ -19,12 +19,15 @@
 
 h1 {
   font-family: "Space Grotesk";
-  font-size: 40px;
+  font-size: 32px;
   color: $primary-text;
+  @include tablet {
+    font-size: 40px;
+  }
 }
 h2 {
   font-family: "Space Grotesk";
-  font-size: 32px;
+  font-size: 28px;
   color: $primary-text;
 }
 h3 {
