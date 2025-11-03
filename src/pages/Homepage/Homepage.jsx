@@ -4,6 +4,7 @@ import RecipeCard from "../../components/RecipeCard";
 import RecipeOverlay from "../../components/RecipeOverlay/RecipeOverlay";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import FilterBar from "../../components/FilterBar/FilterBar";
+import Footer from "../../components/Footer/footer";
 import "./Homepage.scss";
 
 function Homepage() {
@@ -65,6 +66,7 @@ function Homepage() {
           onClose={() => setSelectedRecipe(null)}
         />
       )}
+      <Footer />
     </div>
   );
 }
