@@ -1,5 +1,6 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
 
 .recipe-container {
   display: flex;
@@ -8,9 +9,39 @@
   justify-content: center;
 }
 
-.homepage__title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 0 2rem 0;
+.homepage {
+  &__header {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    justify-content: space-between;
+
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__heading {
+    margin: 0;
+
+    // Hide on mobile
+    display: none;
+
+    @include desktop {
+      display: block;
+    }
+  }
 }

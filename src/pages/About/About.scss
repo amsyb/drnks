@@ -9,8 +9,58 @@
     padding: 2rem;
   }
 
-  &__header {
+  &__back {
+    display: flex;
+    align-items: center;
     margin-bottom: 2rem;
+
+    &:hover {
+      color: $secondary-text;
+    }
+  }
+
+  &__icon {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+  }
+
+  &__btn {
+    border: none;
+    background: none;
+    color: $primary-text;
+    cursor: pointer;
+    font-family: "Lexend";
+    font-weight: 600;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $secondary-text;
+      text-decoration: underline;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include desktop {
+      flex-direction: row;
+      gap: 3rem;
+      align-items: flex-start;
+    }
+  }
+
+  &__text-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__header {
+    // No margin-bottom needed, gap handles it
   }
 
   &__title {
@@ -48,31 +98,11 @@
   }
 
   &__description {
-    margin-bottom: 2rem;
-
-    @include desktop {
-      max-width: 50%;
-    }
+    margin-bottom: 0; // Removed margin, using gap instead
   }
 
-  &__content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-
-    @include desktop {
-      flex-direction: row;
-      align-items: center;
-      gap: 3rem;
-    }
-  }
-
-  &__text {
-    flex: 1;
-
-    @include desktop {
-      max-width: 50%;
-    }
+  &__story {
+    // New wrapper for "Our Story" section
   }
 
   &__section-title {
@@ -95,8 +125,10 @@
 
     @include desktop {
       flex: 1;
-      max-width: 50%;
-      max-height: 600px;
+      max-width: 45%;
+      height: fit-content;
+      position: sticky;
+      top: 2rem; // Optional: makes image stick while scrolling
     }
   }
 }

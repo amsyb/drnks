@@ -10,10 +10,15 @@
 #root {
   display: flex;
   flex-direction: column;
-  padding: 2em;
+  min-height: 100vh;
+}
+
+.main-wrapper {
+  padding: 2rem;
+  flex: 1;
 
   @include tablet {
-    padding: 2em;
+    padding: 2rem;
   }
 }
 

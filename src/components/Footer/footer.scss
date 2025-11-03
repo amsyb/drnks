@@ -1,1 +1,54 @@
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 
+.footer {
+  background-color: $light-yellow;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2.2rem 0.5rem 2.2rem;
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__icon {
+  width: 25px;
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: $primary-text;
+  cursor: pointer;
+  font-family: "Lexend";
+  font-size: 14px;
+  text-decoration: none;
+
+  &:hover {
+    color: $secondary-text;
+    text-decoration: underline;
+  }
+}
+
+.footer__about {
+  display: flex;
+  align-items: center;
+}
+
+.footer__text {
+  font-size: 12px;
+}

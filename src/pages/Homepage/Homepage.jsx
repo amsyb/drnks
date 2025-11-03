@@ -4,8 +4,8 @@ import RecipeCard from "../../components/RecipeCard";
 import RecipeOverlay from "../../components/RecipeOverlay/RecipeOverlay";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import FilterBar from "../../components/FilterBar/FilterBar";
-import Footer from "../../components/Footer/footer";
 import "./Homepage.scss";
+import logo from "../../assets/icons/lilt.svg";
 
 function Homepage() {
   const [selectedRecipe, setSelectedRecipe] = useState(null);
@@ -16,7 +16,6 @@ function Homepage() {
   });
 
   const filteredRecipes = recipes.filter((recipe) => {
-    // Search filter
     const query = searchQuery.toLowerCase();
     const matchesSearch =
       searchQuery === "" ||
@@ -25,11 +24,9 @@ function Homepage() {
         ingredient.toLowerCase().includes(query)
       );
 
-    // Base spirit filter
     const matchesSpirit =
       filters.baseSpirit === "All" || recipe.baseSpirit === filters.baseSpirit;
 
-    // Method filter
     const matchesMethod =
       filters.method === "All" || recipe.method === filters.method;
 
@@ -38,8 +35,11 @@ function Homepage() {
 
   return (
     <div className="homepage">
-      <div className="homepage__title">
-        <h1>Lilt</h1>
+      <div className="homepage__header">
+        <div className="homepage__title">
+          <img src={logo} alt="Lilt Logo" className="homepage__logo" />
+          <h1 className="homepage__heading">Lilt</h1>
+        </div>
         <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       </div>
       <FilterBar filters={filters} setFilters={setFilters} />
@@ -66,7 +66,6 @@ function Homepage() {
           onClose={() => setSelectedRecipe(null)}
         />
       )}
-      <Footer />
     </div>
   );
 }
